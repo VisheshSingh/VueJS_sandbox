@@ -21,6 +21,9 @@ new Vue({
     },
     update: function(e) {
       (this.x = e.offsetX), (this.y = e.offsetY);
+    },
+    click: function() {
+      alert("you clicked!");
     }
   }
 });
