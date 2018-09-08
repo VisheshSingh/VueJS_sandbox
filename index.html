@@ -30,6 +30,13 @@
         <button v-on:dblclick="subtract(10)">Subtract 10 years</button>
         <p>My age is {{ age }}</p>
         <div id="canvas" v-on:mousemove="update">{{x}},{{y}}</div>
+
+        <!-- Keyboard Events -->
+        <h3>Keyboard Events</h3>
+        <label for="Name">Name</label>
+        <input type="text" v-on:keyup.enter="logName" />
+        <label for="Age">Age</label>
+        <input type="text" v-on:keyup.alt="logAge" />
     </div>
 
     <script src="app.js"></script>
