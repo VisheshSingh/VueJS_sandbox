@@ -12,9 +12,14 @@
 
 <body>
     <div id="vue_app">
-        <h1>{{ greet('evening') }}</h1>
+        <!-- Data & models -->
+        <h3>{{ greet('evening') }}</h3>
         <p>Name: {{ name }}</p>
         <p>Job: {{ job }}</p>
+
+        <!-- Data Binding -->
+        <a v-bind:href="website">Net Ninja</a>
+        <p v-html="websiteTag"></p>
     </div>
 
     <script src="app.js"></script>
