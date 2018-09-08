@@ -20,6 +20,14 @@
         <!-- Data Binding -->
         <a v-bind:href="website">Net Ninja</a>
         <p v-html="websiteTag"></p>
+
+        <!-- Events -->
+        <h3>Events</h3>
+        <button @click="add(1)">Add a year</button>
+        <button v-on:click="subtract(1)">Subtract a year</button>
+        <button @dblclick="add(10)">Add 10 years</button>
+        <button v-on:dblclick="subtract(10)">Subtract 10 years</button>
+        <p>My age is {{ age }}</p>
     </div>
 
     <script src="app.js"></script>
