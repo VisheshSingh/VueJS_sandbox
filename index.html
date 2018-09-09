@@ -68,6 +68,15 @@
             <span>Yoshi</span>
         </div>
 
+        <!-- Conditionals -->
+        <h3>Conditionals</h3>
+        <button v-on:click="error = !error">Toggle Error</button>
+        <button v-on:click="success = !success">Toggle Success</button>
+        <!-- <p v-if="error">There is an error :(</p>
+        <p v-else-if="success">Whoo, success!</p> -->
+
+        <p v-show="error">There was an error</p>
+        <p v-show="success">Whoo, success!</p>
     </div>
 
     <script src="app.js"></script>
