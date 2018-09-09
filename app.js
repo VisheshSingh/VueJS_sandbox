@@ -13,7 +13,13 @@ new Vue({
     available: false,
     nearby: false,
     error: false,
-    success: false
+    success: false,
+    characters: ["Mario", "Luigi", "Yoshi", "Ryu"],
+    ninjas: [
+      { name: "Ryu", age: 25 },
+      { name: "Yoshi", age: 21 },
+      { name: "Hatori", age: 28 }
+    ]
   },
   methods: {
     greet: function(time) {

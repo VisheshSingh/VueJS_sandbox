@@ -77,6 +77,27 @@
 
         <p v-show="error">There was an error</p>
         <p v-show="success">Whoo, success!</p>
+
+        <!-- Loops -->
+        <h3>Loops</h3>
+        <ul>
+            <li v-for="c in characters">{{c}}</li>
+        </ul>
+
+        <ul>
+            <li v-for="ninja in ninjas">{{ninja.name}} - {{ninja.age}}</li>
+        </ul>
+
+        <div v-for="(ninja,index) in ninjas" style="background:teal; padding: 10px; color: #fff; margin: 10px; display: inline-block">
+            <h4>{{index+1}} . {{ninja.name}}</h4>
+            <p>{{ninja.age}}</p>
+        </div>
+
+        <template v-for="(ninja,index) in ninjas">
+            <h4>{{index+1}} . {{ninja.name}}</h4>
+            <p>{{ninja.age}}</p>
+        </template>
+
     </div>
 
     <script src="app.js"></script>
