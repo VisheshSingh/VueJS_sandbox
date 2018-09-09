@@ -4,3 +4,20 @@
   border: 2px solid #333;
   text-align: center;
 }
+
+span {
+  background: red;
+  padding: 10px;
+  color: #fff;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+.available span {
+  background: green;
+}
+
+.nearby span:after {
+  content: "nearby";
+  margin-left: 10px;
+}
